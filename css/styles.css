@@ -154,7 +154,7 @@ body {
       rgba(0, 0, 0, 0.25),
       rgba(0, 0, 0, 0.25)
     ),
-    url(/images/Img.jpg);
+    url(/images/bcg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -210,8 +210,9 @@ body {
 .antena .item {
 }
 .bgc-icon {
+  display: inline-block;
   background-color: tomato;
-  display: flex;
+  width: 270px;
 }
 .antena-icon {
 }
@@ -480,8 +481,16 @@ footer {
   background-color: var(--second-background);
   padding-top: 60px;
   padding-bottom: 60px;
+  white-space: nowrap;
 }
-
+.footer-item {
+  white-space: normal;
+  display: inline-block;
+  vertical-align: top;
+}
+.footer-item:last-child {
+  margin-left: 70px;
+}
 .addres {
   font-family: var(--primary-font-family);
   font-style: normal;
@@ -525,7 +534,7 @@ footer {
   margin-bottom: 20px;
 }
 .footer-social {
-  display: flex;
+  display: inline-flex;
 }
 .footer-social-list {
   display: flex;
@@ -542,7 +551,7 @@ footer {
   justify-content: space-around;
   width: 44px;
   height: 44px;
-  background-color: var(--background-color);
+  background-color: rgb(255, 255, 255, 10%);
   border-radius: 50%;
 }
 .footer-social-list-icon {
@@ -551,7 +560,7 @@ footer {
   margin-top: 11px;
   justify-content: space-around;
   align-items: center;
-  fill: #afb1b8;
+  fill: var(--background-color);
 }
 
 .footer-social-list-link:hover,
