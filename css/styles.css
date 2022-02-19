@@ -104,6 +104,7 @@ body {
   border: 1px solid #ececec;
 }
 .contact {
+  display: flex;
   font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: 500;
@@ -114,12 +115,31 @@ body {
   color: var(--secondary-color);
 }
 .contact.item:not(:last-child) {
-  margin-right: 50px;
-  margin-left: 331px;
+  margin-right: 30px;
 }
 .contact:hover,
-.contact:focus {
+.contact:focus,
+.icon-email:focus,
+.icon-email:hover,
+.icon-tel:focus,
+.icon-tel:hover {
   color: var(--focus-color);
+  fill: var(--focus-color);
+}
+.icon-email {
+  display: block;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  margin-left: 305px;
+  fill: var(--secondary-color);
+}
+.icon-tel {
+  display: block;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--secondary-color);
 }
 /*service*/
 .servis {
@@ -187,17 +207,13 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.icon-maine {
-  display: flex;
-  background-color: #2196f3;
-  align-items: center;
-  justify-content: center;
-  content: "";
+.antena .item {
 }
-.icon-antena {
-  align-items: center;
-  background-size: cover;
-  content: "";
+.bgc-icon {
+  background-color: tomato;
+  display: flex;
+}
+.antena-icon {
 }
 .peculiarities .item {
   width: 270px;
@@ -305,30 +321,39 @@ body {
 
 .social-list {
   display: flex;
+  padding-top: 10px;
+  justify-content: space-around;
+  align-items: center;
 }
 .social-list-item {
+  justify-content: space-around;
 }
 .social-list-link {
   display: flex;
-  align-items: center;
-  justify-content: center;
+
+  justify-content: space-around;
   width: 44px;
   height: 44px;
-  background-color: tomato;
+  background-color: var(--background-color);
   border-radius: 50%;
 }
 .social-list-icon {
-  fill: var(--secondary-text-color-theme-light);
+  width: 20px;
+  height: 20px;
+  margin-top: 11px;
+  justify-content: space-around;
+  align-items: center;
+  fill: #afb1b8;
 }
 
 .social-list-link:hover,
 .social-list-link:focus {
-  background-color: #303030;
+  background-color: var(--focus-color);
 }
 
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
-  fill: var(--accent-color);
+  fill: var(--background-color);
 }
 /*button*/
 .button-navigation {
@@ -421,8 +446,37 @@ body {
 
   color: var(--secondary-color);
 }
+/* Company */
+.company {
+  display: flex;
+}
+
+.company-item {
+  display: flex;
+  content: "";
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.company-item:last-child {
+  margin-right: 0px;
+}
+.company-list {
+  width: 170px;
+  height: 92px;
+
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+.company-icon {
+  fill: #afb1b8;
+}
 /*footer*/
 footer {
+  display: flex;
   background-color: var(--second-background);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -456,4 +510,57 @@ footer {
 .address-contact:focus,
 .address-contact:hover {
   color: var(--focus-color);
+}
+.footer-title {
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  margin-bottom: 20px;
+}
+.footer-social {
+  display: flex;
+  flex-wrap: ;
+}
+.footer-social-list {
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-social-list-item {
+  justify-content: space-around;
+}
+.footer-social-list-link {
+  display: flex;
+
+  justify-content: space-around;
+  width: 44px;
+  height: 44px;
+  background-color: var(--background-color);
+  border-radius: 50%;
+}
+.footer-social-list-icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 11px;
+  justify-content: space-around;
+  align-items: center;
+  fill: #afb1b8;
+}
+
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+  background-color: var(--focus-color);
+}
+
+.footer-social-list-link:hover .footer-social-list-icon,
+.footer-social-list-link:focus .footer-social-list-icon {
+  fill: var(--background-color);
 }
