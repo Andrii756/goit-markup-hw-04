@@ -207,14 +207,19 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.antena .item {
-}
-.bgc-icon {
-  display: inline-block;
-  background-color: tomato;
+.antena-item {
+  justify-content: space-between;
+
   width: 270px;
+  height: 120px;
+}
+.antena-link {
+  fill: #212121;
 }
 .antena-icon {
+  height: 120px;
+  width: 240px;
+  background-color: #f5f4fa;
 }
 .peculiarities .item {
   width: 270px;
