@@ -157,7 +157,8 @@ body {
       rgba(0, 0, 0, 0.25),
       rgba(0, 0, 0, 0.25)
     ),
-    url(/images/bcg.jpg);
+    url(../images/bcg.jpg);
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
