@@ -129,12 +129,15 @@ body {
 .contact:focus .icon-tel {
   fill: var(--focus-color);
 }
+.contact-line {
+  display: flex;
+  margin-left: auto;
+}
 .icon-email {
   display: block;
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  margin-left: 305px;
   fill: var(--secondary-color);
 }
 .icon-tel {
@@ -219,9 +222,15 @@ body {
 .icon-sector {
   background-color: #f5f4fa;
   margin-bottom: 30px;
+
+  min-width: 270px;
+  min-height: 120px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
 }
 .icon {
-  margin: 25px 100px;
   width: 70px;
   height: 70px;
 }
@@ -471,10 +480,15 @@ body {
   width: 170px;
   height: 92px;
 }
-
+.company-sector {
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+}
 .company-item {
   display: flex;
-  content: "";
+
   align-items: center;
   justify-content: center;
   margin-right: 30px;
@@ -483,24 +497,25 @@ body {
   margin-right: 0px;
 }
 .company-list-link {
+  display: flex;
+
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
-  padding: 16px 32px;
 }
 .company-icon {
   fill: #afb1b8;
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
-
-  padding-left: 30px;
-  padding-top: 20px;
 }
-.company-icon:focus,
-.company-icon:hover {
+.company-list-link:focus,
+.company-list-link:hover {
+  border: 2px solid var(--focus-color);
+  border-radius: 4px;
+}
+.company-list-link:focus .company-icon,
+.company-list-link:hover .company-icon {
   fill: var(--focus-color);
-  border: 1px solid var(--focus-color);
 }
 /*footer*/
 footer {
