@@ -73,6 +73,9 @@ body {
   color: #ffffff;
 }
 /*site nab */
+.site-nav .current {
+  color: var(--focus-color);
+}
 
 .site-nav {
   display: flex;
